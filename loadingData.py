@@ -1,4 +1,6 @@
-import cv2 as cv
+
+
+import cv2
 import pickle
 import os
 import numpy as np
@@ -14,8 +16,8 @@ def create_training_data():
         class_num = CATEGORIES.index(category)
         for img in os.listdir(path):
             try:
-                img_array = cv.imread(os.path.join(path,img),cv.IMREAD_GRAYSCALE)
-                newArray = cv.resize(img_array,(IMG_SIZE,IMG_SIZE))
+                img_array = cv2.imread(os.path.join(path,img),cv2.IMREAD_GRAYSCALE)
+                newArray = cv2.resize(img_array,(IMG_SIZE,IMG_SIZE))
                 training_data.append([newArray,class_num])
             except Exception as e:
                 pass
