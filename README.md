@@ -3,7 +3,7 @@ This is a repository consisting of a model I have created to distinguish between
 
 Prerequisites:
 python
-tensorflow   installed by "pip install tensorflow"
+tensorflow   installed by "pip install tensorflow"   I used version 2.0 with gpu comatibility,how ever GPU is not that necessary
 opencv       installed by "pip install opencv-python" or "pip install opencv-contrib-python"
 
 To use this as a direct application,create a folder in which you want to use this.
